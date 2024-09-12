@@ -3,7 +3,7 @@ import { resourcesLinks, platformLinks, communityLinks } from "../constants";
 
 function Footer() {
   return (
-    <div className="flex gap-40 items-center justify-center mx-100">
+    <div className=" flex flex-col gap-8 md:flex-row md:gap-40 items-center justify-center mx-100 ">
       <div className="flex flex-col space-y-2">
         <h2 className="mb-3 text-lg underline">Resources</h2>
         {resourcesLinks.map((resource, index) => (

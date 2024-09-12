@@ -5,15 +5,15 @@ import { BadgeCheck } from "lucide-react";
 
 function Workflow() {
   return (
-    <div className="mx-[200px]">
+    <div className="mx-[200px] flex flex-col items-center justify-center">
       <h1 className="text-4xl lg:text-5xl text-center">
-        Accelerate yur{" "}
-        <span className="bg-gradient-to-r from-orange-600 to-orange-900 text-transparent bg-clip-text">
+        Accelerate your
+        <span className="bg-gradient-to-r from-orange-600 to-orange-900 text-transparent bg-clip-text text-center">
           coding Workflow
         </span>
       </h1>
-      <div className="flex justify-center items-center mx-auto mt-16">
-        <img src={code} alt="Code png" className="w-1/2" />
+      <div className="flex flex-col md:flex-row justify-center items-center mt-16">
+        <img src={code} alt="Code png" className="w-full md:w-1/2" />
         <div className="">
           {checklistItems.map((checklistItem, index) => (
             <div className="flex flex-col" key={index}>
